@@ -1,11 +1,13 @@
+package main;
+
 import java.util.List;
 
-abstract class Game
+public abstract class Game
 {
     List<Integer> payouts;
-    abstract void run(int totalRolls);
+    public abstract void run(int totalRolls);
     abstract boolean win(int rollResult, int rollCount);
-    abstract void printStadistics();
+    public abstract void printStadistics();
     protected int rollDices(int numberOfDices) {
         int result = 0;
         for (int i=0; i<numberOfDices; i++) {

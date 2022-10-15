@@ -1,3 +1,5 @@
+package main;
+
 import java.util.ArrayList;
 
 public class ArmandoGame extends Game {
@@ -15,7 +17,7 @@ public class ArmandoGame extends Game {
     }
     @Override
     public void run(int totalRolls) {
-        System.out.println("Starting Armando Game!!!");
+        System.out.println("Starting Armando main.Game!!!");
         System.out.println("#Dices="+numberOfDice);
         System.out.println("Payout$="+WIN_PAYOUT);
 
