@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Armando Zerpa Test! ajzerpa@gmail.com");
+        System.out.println("Armando Zerpa Test!! ajzerpa@gmail.com");
 
         int rolls = 1000000;
         Game game1 = new ArmandoGame("game 1", 1, 6, 4);
