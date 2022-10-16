@@ -13,7 +13,8 @@ class GameTest extends Specification {
 
     @BeforeEach
     void setUp() {
-        game = new ArmandoGame("test", 1, 6, 24);
+        IDice dice = new RegularDice(null);
+        game = new ArmandoGame("test", 1, 6, 24, dice);
     }
 
     @Test

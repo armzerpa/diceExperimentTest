@@ -9,11 +9,12 @@ public class ArmandoGame extends Game {
     private int winnerNumber;
     private int maxRollForGame;
 
-    public ArmandoGame(String name, int numberOfDice, int winnerNumber, int maxRollForGame) {
+    public ArmandoGame(String name, int numberOfDice, int winnerNumber, int maxRollForGame, IDice dice) {
         this.gameName = name;
         this.numberOfDice = numberOfDice;
         this.winnerNumber = winnerNumber;
         this.maxRollForGame = maxRollForGame;
+        this.dice = dice;
     }
     @Override
     public void run(int totalRolls) {

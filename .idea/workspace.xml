@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ebf77ef-5c80-4712-b45e-697cb541b972" name="Changes" comment="refactor y tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/powermock_api_mockito.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/powermock_api_mockito2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/powermock_module_junit4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diceExperiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/diceExperiment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ArmandoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ArmandoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ArmandoGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ArmandoGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Dice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,6 +59,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="spock.lang.Specification" />
       <recent name="" />
@@ -67,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArmandoGameTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="diceExperiment" />
@@ -90,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArmandoGameTest.test_run_exact_games_withmock_allwins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArmandoGameTest.test_run_exact_games_all_looses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diceExperiment" />
       <extension name="coverage">
         <pattern>
@@ -100,13 +106,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.ArmandoGameTest" />
-      <option name="METHOD_NAME" value="test_run_exact_games_withmock_allwins" />
+      <option name="METHOD_NAME" value="test_run_exact_games_all_looses" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArmandoGameTest.test_win_with_mocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArmandoGameTest.test_run_exact_games_all_wins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diceExperiment" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +122,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.ArmandoGameTest" />
-      <option name="METHOD_NAME" value="test_win_with_mocks" />
+      <option name="METHOD_NAME" value="test_run_exact_games_all_wins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,18 +162,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ArmandoGameTest" />
-      <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_withmock_allwins" />
-      <item itemvalue="JUnit.ArmandoGameTest.test_win_with_mocks" />
+      <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_all_looses" />
+      <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_all_wins" />
       <item itemvalue="JUnit.DiceTest.roll" />
       <item itemvalue="JUnit.GameTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArmandoGameTest" />
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.ArmandoGameTest" />
+        <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_all_looses" />
+        <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_all_wins" />
         <item itemvalue="JUnit.DiceTest.roll" />
-        <item itemvalue="JUnit.ArmandoGameTest.test_win_with_mocks" />
-        <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_withmock_allwins" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665906307897</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor y tests">
+      <created>1665908895793</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665908895793</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,5 +240,21 @@
     <MESSAGE value="message change" />
     <MESSAGE value="refactor y tests" />
     <option name="LAST_COMMIT_MESSAGE" value="refactor y tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/ArmandoGame.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/ArmandoGame.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
