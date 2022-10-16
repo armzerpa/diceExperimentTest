@@ -15,10 +15,18 @@ class ArmandoGameTest extends Specification {
     }
 
     @Test
-    void run() {
-        game.run(12);
+    void test_run_exact_games() {
+        game.run(1000);
         int size = game.payouts.size();
-        assertEquals(3, size);
+        assertEquals(250, size);
+
+        game.run(1000);
+        size = game.payouts.size();
+        assertEquals(250, size);
+
+        game.run(1000);
+        size = game.payouts.size();
+        assertEquals(250, size);
 
         game.run(1000);
         size = game.payouts.size();
@@ -26,11 +34,36 @@ class ArmandoGameTest extends Specification {
     }
 
     @Test
+    void test_run_missing_games() {
+        game.run(10);
+        int size = game.payouts.size();
+        assertEquals(2, size);
+
+        game.run(10);
+        size = game.payouts.size();
+        assertEquals(2, size);
+
+        game.run(10);
+        size = game.payouts.size();
+        assertEquals(2, size);
+
+        game.run(10);
+        size = game.payouts.size();
+        assertEquals(2, size);
+    }
+
+    @Test
     void test_win() {
         boolean win = game.win(1, 1);
-        assertFalse(win);
+        assertEquals(win, false);
 
         win = game.win(6, 1);
         assertTrue(win);
+    }
+    @Test
+    void test_calculateTotalPayouts_amount_bigger_than_zero() {
+        game.run(10);
+        int total = game.calculateTotalPayouts();
+        assertTrue (total >= 0);
     }
 }

@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ebf77ef-5c80-4712-b45e-697cb541b972" name="Changes" comment="message change">
+    <list default="true" id="6ebf77ef-5c80-4712-b45e-697cb541b972" name="Changes" comment="refactor y tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/powermock_api_mockito2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/powermock_module_junit4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diceExperiment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/diceExperiment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArmandoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ArmandoGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Dice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UtilStadistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UtilStadistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ArmandoGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ArmandoGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,10 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "spock.lang.Specification",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock": "spock.lang.Specification",
     "create.test.in.the.same.root": "true",
-    "jdk.selected.JAVA_MODULE": "18"
+    "jdk.selected.JAVA_MODULE": "18",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -89,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArmandoGameTest.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArmandoGameTest.test_calculateTotalPayouts_amount_bigger_than_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diceExperiment" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +103,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.ArmandoGameTest" />
-      <option name="METHOD_NAME" value="run" />
+      <option name="METHOD_NAME" value="test_calculateTotalPayouts_amount_bigger_than_zero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArmandoGameTest.test_win" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArmandoGameTest.test_run_exact_games_withmock_allwins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diceExperiment" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +119,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.ArmandoGameTest" />
-      <option name="METHOD_NAME" value="test_win" />
+      <option name="METHOD_NAME" value="test_run_exact_games_withmock_allwins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.test_rollDices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diceExperiment" />
       <extension name="coverage">
         <pattern>
@@ -131,12 +135,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.GameTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="test_rollDices" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.test_getGamesCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameTest.test_rollDices_withMock_result" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="diceExperiment" />
       <extension name="coverage">
         <pattern>
@@ -146,7 +151,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="main" />
       <option name="MAIN_CLASS_NAME" value="main.GameTest" />
-      <option name="METHOD_NAME" value="test_getGamesCount" />
+      <option name="METHOD_NAME" value="test_rollDices_withMock_result" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,18 +160,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ArmandoGameTest" />
-      <item itemvalue="JUnit.ArmandoGameTest.run" />
-      <item itemvalue="JUnit.ArmandoGameTest.test_win" />
-      <item itemvalue="JUnit.GameTest" />
-      <item itemvalue="JUnit.GameTest.test_getGamesCount" />
+      <item itemvalue="JUnit.ArmandoGameTest.test_calculateTotalPayouts_amount_bigger_than_zero" />
+      <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_withmock_allwins" />
+      <item itemvalue="JUnit.GameTest.test_rollDices" />
+      <item itemvalue="JUnit.GameTest.test_rollDices_withMock_result" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ArmandoGameTest" />
-        <item itemvalue="JUnit.ArmandoGameTest.run" />
-        <item itemvalue="JUnit.ArmandoGameTest.test_win" />
-        <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.GameTest.test_getGamesCount" />
+        <item itemvalue="JUnit.ArmandoGameTest.test_run_exact_games_withmock_allwins" />
+        <item itemvalue="JUnit.GameTest.test_rollDices_withMock_result" />
+        <item itemvalue="JUnit.GameTest.test_rollDices" />
+        <item itemvalue="JUnit.ArmandoGameTest.test_calculateTotalPayouts_amount_bigger_than_zero" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665865456272</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor y tests">
+      <created>1665872131229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665872131229</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +222,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="message change" />
-    <option name="LAST_COMMIT_MESSAGE" value="message change" />
+    <MESSAGE value="refactor y tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor y tests" />
   </component>
 </project>
